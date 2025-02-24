@@ -1,0 +1,9 @@
+:root {
+    --altura: 100px; 
+}
+
+.rectangulo {
+    height: var(--altura);
+    width: calc(var(--altura) * 2);
+    background-color: #3498db;
+}
