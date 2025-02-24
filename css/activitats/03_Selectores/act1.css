@@ -1,13 +1,8 @@
-<style>
 
 .rojo {
     color: red;
 }
+.amarillo {
+    color: #fff237;
+}
 
-</style>
-
-<ul>
-    <li>Agua</li>
-    <li class="rojo">manzanas</li>
-    <li>Galletas</li>
-</ul>
