@@ -1,5 +1,5 @@
 .header {
-    background: linear-gradient(to right, #a218ff, #8f2675);
+    background: linear-gradient(to right, #75f2f7, #069465);
     color: white;
     padding: 20px;
     border-radius: 10px;
@@ -7,9 +7,69 @@
     display: flex;
     justify-content: center;
 }
+.header2 {
+    background: linear-gradient(to right, #75f2f7, #069465);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 30px;
+}
 
 .centrar{
     display: flex;
     justify-content: center;
     color: beige;
 }
+
+.color{
+    color: beige;
+}
+
+.perfil {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.perfil img {
+    width: 150px; 
+    height: 150px;
+    border-radius: 50%; 
+}
+
+.perfil .info {
+    color: white; 
+    font-size: 18px;
+}
+
+body {
+    color: rgb(255, 255, 255);
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.actividades {
+    margin: 20px auto;
+    width: 50%;
+    text-align: left;
+    border: 10px solid rgb(0, 255, 213);
+    background-color: rgb(0, 128, 128);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+details {
+    border: 2px solid rgb(0, 255, 213);
+    padding: 20px;
+    border-radius: 5px;
+    background-color: rgb(0, 255, 213);
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+summary {
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
