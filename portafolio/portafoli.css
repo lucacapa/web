@@ -1,0 +1,13 @@
+.header {
+    background: linear-gradient(to right, #a218ff, #8f2675);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 240px;
+}
+
+.centrar{
+    display: flex;
+    justify-content: center;
+    color: beige;
+}
