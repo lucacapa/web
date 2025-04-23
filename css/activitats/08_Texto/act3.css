@@ -47,6 +47,15 @@
     transition: all 0.3s ease;
 }
 
+.titulo:hover {
+    font-style: italic;
+    color: blue;
+}
+
+.prologo:hover {
+    color: rgb(255, 0, 0);
+}
+
 
 .autornombre {
     margin-right: 0.5rem;
