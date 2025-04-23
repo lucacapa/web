@@ -1,0 +1,21 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+  
+  .pseso {
+    background-color: #3498db; 
+    color: white;
+    padding: 1rem;
+    margin: 10px 0;
+    
+
+    max-height: 10rem; 
+    min-height: 5rem;
+    
+    overflow-y: auto; 
+    
+   
+    border-radius: 8px;
+    box-sizing: border-box; 
+}
