@@ -1,0 +1,11 @@
+.a {
+    display: block flow-root;
+    background-color: rgb(0, 255, 242);
+    width: 100vw; 
+    text-align: center;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }

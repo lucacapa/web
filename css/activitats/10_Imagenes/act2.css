@@ -1,0 +1,16 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+
+.perfil {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.perfil img {
+    width: 200px; 
+    height: 200px;
+    border-radius: 50%; 
+}
