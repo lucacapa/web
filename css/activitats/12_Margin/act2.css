@@ -1,0 +1,56 @@
+
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+  
+  .aviso {
+    background-color: #dbe6e6; 
+    padding: 20px;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  
+  .aviso p {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+  
+  .aviso a {
+    color: #000;
+    text-decoration: underline;
+  }
+  
+  .contenido {
+    text-align: left;
+    max-width: 600px;
+    margin: auto;
+  }
+  
+  .contenido h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 1;
+    margin-bottom: 20px;
+  }
+  
+  .contenido h1 span {
+    display: block;
+  }
+  
+  .descripcion {
+    color: #555;
+    font-size: 0.9rem;
+    margin-bottom: 30px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    border: 1px solid black;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 0.9rem;
+  }
+  
