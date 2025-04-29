@@ -1,0 +1,28 @@
+
+@font-face {
+    font-family: 'Lobster';
+    src: url('fonts/Lobster-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'OpenSans';
+    src: url('fonts/OpenSans-Regular.ttf') format('truetype');
+}
+
+.titulo {
+    font-family: 'Lobster', cursive;
+    font-size: 2.5rem;
+    color: #333;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.texto {
+    display: block; 
+    font-family: 'OpenSans', sans-serif;
+    font-size: 1.2rem;
+    color: #444;
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: justify;
+}
