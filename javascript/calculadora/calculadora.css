@@ -1,9 +1,14 @@
 
-body {
-    margin: 2;
-    font-family: Arial, sans-serif;
-    padding: 20px;
-  }
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff; 
+}
+
 
   .caja {
     border: 3px solid rgb(118, 110, 126);
@@ -12,45 +17,89 @@ body {
      border-radius: 14px;
   }
 
-  .wrapper {
-    display: grid;
-    grid-template-columns: repeat(10, 1fr); 
-    grid-gap: 5px;
-    grid-auto-rows: minmax(50px, auto);
-    padding: 10px;
-    border-radius: 10px;
-    background-color: #fff;
-  }
-
   .container {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: rgb(0, 0, 0);
-    padding: 20px;
-    border-radius: 15px;
+    padding: 30px;
+    border-radius: 25px;
+    max-width: 500px; 
+    margin: auto; 
+    flex-direction: column; 
   }
+  
   .container > div {
     background-color: #f1f1f1;
     border: 1px solid black;
     padding: 20px;
     font-size: 30px;
     text-align: center;
+    width: 100%; 
+    box-sizing: border-box;
+  }
+  
+  .calculator {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   }
 
-  .one {
-    border-radius: 10px;
-    width: 40px;           
-    height: 50px;   
-    font-size: 20px;
-    border: 1px solid #333;
-    background-color: #e0e0e0;
+  .calculator2 {
+    background-color: rgb(0, 0, 0);
+    padding: 6px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .calculator3 {
+    background-color: rgb(0, 0, 0);
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 240px; 
+    padding: 30px; 
+    color: #ffffff;
+    text-align: right;
+    }
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(60px, 1fr)); 
+    gap: 10px;
+  }
+  
+  .buttons button {
+    min-width: 60px;  
+    height: 45px;
+    font-size: 1em;
+    padding: 5px 10px;   
+    border: none;
+    background-color: #000000;
+    color: white;
+    border-radius: 5px;
     cursor: pointer;
-    transition: background-color 0.2s;
-    box-sizing: border-box; 
+    white-space: nowrap; 
+    overflow: hidden;    
+    text-overflow: ellipsis;
   }
   
-  .one:hover {
-    background-color: #ccc;
+  .buttons .equals {
+    grid-column: span 2;
+    background-color: #2196F3;
   }
-  
+
+  .botons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+  }
+
+  button{
+    font-size: 1.2rem;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    background-color: #ddd;
+    cursor: pointer;
+    transition: background 0.2s;
+  }

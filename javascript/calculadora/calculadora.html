@@ -6,24 +6,79 @@
     <title>Calculadora</title>
     <link rel="stylesheet" href="calculadora.css">
 </head>
-<body>
-    <div class="container">
-    <div class="wrapper">
-        <button class="one">0</button>
-        <button class="one">1</button>
-        <button class="one">2</button>
-        <button class="one">3</button>
-        <button class="one">4</button>
-        <button class="one">5</button>
-        <button class="one">6</button>
-        <button class="one">7</button>
-        <button class="one">8</button>
-        <button class="one">9</button>
+<body> 
+    <div class="calculator2"> 
+    <div class="calculator">
+    <div class="calculator3"> </div>
+    <h1></h1>
+    <div class="buttons">
+        <button class="one" onclick="number1()">1</button>
+        <button class="one" onclick="number2()">2</button>
+        <button class="one" onclick="number3()">3</button>
+        <button class="one" onclick="number4()">4</button>
+        <button class="one" onclick="number5()">5</button>
+        <button class="one" onclick="number6()">6</button>
+        <button class="one" onclick="number7()">7</button>
+        <button class="one" onclick="number8()">8</button>
+        <button class="one" onclick="number9()">9</button>
+        <button class="one" onclick="number0()">0</button>        
+        <button class="one">.</button>
+        <button class="one" onclick="deletee()">DEL</button>
+        <button class="one">C</button>
         <button class="one">+</button>
         <button class="one">-</button>
         <button class="one">*</button>
         <button class="one">/</button>
+        <button class="one">=</button>
     </div>
 </div>
+</div>
 </body>
+<script>
+    function number1() {
+      const display = document.querySelector('.calculator3');
+      display.textContent += '1';
+    }
+    function number2() {
+      const display = document.querySelector('.calculator3');
+      display.textContent += '2';
+    }
+    function number3() {
+      const display = document.querySelector('.calculator3');
+      display.textContent += '3';
+    }
+    function number4() {
+      const display = document.querySelector('.calculator3');
+      display.textContent += '4';
+    }
+    function number5() {
+      const display = document.querySelector('.calculator3');
+      display.textContent += '5';
+    }
+    function number6() {
+      const display = document.querySelector('.calculator3');
+      display.textContent += '6';
+    }
+    function number7() {
+      const display = document.querySelector('.calculator3');
+      display.textContent += '7';
+    }
+    function number8() {
+      const display = document.querySelector('.calculator3');
+      display.textContent += '8';
+    }
+    function number9() {
+      const display = document.querySelector('.calculator3');
+      display.textContent += '9';
+    }
+    function number0() {
+      const display = document.querySelector('.calculator3');
+      display.textContent += '0';
+    }
+    function deletee() {
+    const display = document.querySelector('.calculator3');
+    display.textContent = display.textContent.slice(0, -1);
+  }
+    </script>
+    
 </html>
