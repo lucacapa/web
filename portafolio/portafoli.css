@@ -106,6 +106,7 @@ summary {
     font-weight: bold;
     transition: background-color 0.3s ease;
     width: 70%;
+    box-sizing: border-box; 
 }
 
 .links a:hover {
@@ -117,11 +118,14 @@ summary {
     background: linear-gradient(to right, #4fd1c5, #2f855a);
     color: white;
     padding: 20px 40px;
-    border-radius: 15px;
-    margin: 20px auto;
-    max-width: 800px;
+    border-radius: 30px;
+    margin: 30px auto;
+    width: 100%;
     font-size: 24px;
     font-weight: bold;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
     text-transform: uppercase;
+    box-sizing: border-box; 
 }
+
+
