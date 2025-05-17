@@ -4,15 +4,3 @@ body {
     text-align: center;
     padding: 50px;
   }
-  
-  .imagen-gris {
-    width: 300px;
-    transition: filter 0.5s ease;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-  }
-  
-  .imagen-gris:hover {
-    filter: grayscale(100%);
-  }
-  
