@@ -1,0 +1,9 @@
+
+.boton-rotar {
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.boton-rotar:hover {
+    transform: rotate(15deg);
+}
