@@ -1,0 +1,13 @@
+.boton-rotar {
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.boton-rotar:hover {
+    transform: rotate(360deg);
+    transition-duration: 1s; 
+}
+
+.deco {
+   border-radius: 10px;
+}
