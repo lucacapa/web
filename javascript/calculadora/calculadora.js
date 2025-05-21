@@ -1,29 +1,27 @@
 const bnum = document.querySelectorAll('.numero');
 const pantalla = document.getElementById('pantalla');
-<<<<<<< HEAD
 const blimpiar = document.getElementById('C');
 const boperacion = document.querySelectorAll('.operacion');
 
- bnum.forEach(button => {
-=======
-const blimpiar = document.getElementById('C')
-  bnum.forEach(button => {
->>>>>>> 33540c347a23bc2acadc5ed75d41ef7f031e8f1c
-    button.addEventListener('click', () => {
-      if (pantalla.textContent === '0') {
-        pantalla.textContent = button.textContent;
-      } else {
-        pantalla.textContent += button.textContent;
-      }
-    });
+let valorAnterior = '';
+let operadorSeleccionat = '';
+
+bnum.forEach(button => {
+  button.addEventListener('click', () => {
+    if (pantalla.textContent === '0' || pantalla.textContent === valorAnterior) {
+      pantalla.textContent = button.textContent;
+    } else {
+      pantalla.textContent += button.textContent;
+    }
+  });
 });
 
 blimpiar.addEventListener('click', () => {
-    pantalla.textContent = '0';
+  pantalla.textContent = '0';
+  valorAnterior = '';
+  operadorSeleccionat = '';
 });
 
-
-<<<<<<< HEAD
 boperacion.forEach(button => {
   button.addEventListener('click', () => {
     const operacion = button.textContent;
@@ -43,6 +41,8 @@ boperacion.forEach(button => {
       }
 
       pantalla.textContent = resultat;
+      valorAnterior = '';
+      operadorSeleccionat = '';
     } else if (operacion === 'DEL') {
       pantalla.textContent = pantalla.textContent.slice(0, -1) || '0';
     } else if (operacion === '.') {
@@ -56,5 +56,3 @@ boperacion.forEach(button => {
     }
   });
 });
-=======
->>>>>>> 33540c347a23bc2acadc5ed75d41ef7f031e8f1c
