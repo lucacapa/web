@@ -4,3 +4,10 @@ body {
     text-align: center;
     padding: 50px;
   }
+  img {
+    width: 300px;
+    transition: filter 0.5s ease;
+  }
+  img:hover {
+    filter: grayscale(100%);
+  }
