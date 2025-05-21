@@ -4,7 +4,7 @@ const blimpiar = document.getElementById('C');
 const boperacion = document.querySelectorAll('.operacion');
 
 let valorAnterior = '';
-let operadorSeleccionat = '';
+let seleccionado = '';
 
 bnum.forEach(button => {
   button.addEventListener('click', () => {
@@ -19,7 +19,7 @@ bnum.forEach(button => {
 blimpiar.addEventListener('click', () => {
   pantalla.textContent = '0';
   valorAnterior = '';
-  operadorSeleccionat = '';
+  seleccionado = '';
 });
 
 boperacion.forEach(button => {
@@ -30,19 +30,19 @@ boperacion.forEach(button => {
       const valorActual = pantalla.textContent;
       let resultat = 0;
 
-      if (operadorSeleccionat === '+') {
+      if (seleccionado === '+') {
         resultat = parseFloat(valorAnterior) + parseFloat(valorActual);
-      } else if (operadorSeleccionat === '-') {
+      } else if (seleccionado === '-') {
         resultat = parseFloat(valorAnterior) - parseFloat(valorActual);
-      } else if (operadorSeleccionat === '*') {
+      } else if (seleccionado === '*') {
         resultat = parseFloat(valorAnterior) * parseFloat(valorActual);
-      } else if (operadorSeleccionat === '/') {
+      } else if (seleccionado === '/') {
         resultat = parseFloat(valorAnterior) / parseFloat(valorActual);
       }
 
       pantalla.textContent = resultat;
       valorAnterior = '';
-      operadorSeleccionat = '';
+      seleccionado = '';
     } else if (operacion === 'DEL') {
       pantalla.textContent = pantalla.textContent.slice(0, -1) || '0';
     } else if (operacion === '.') {
@@ -51,7 +51,7 @@ boperacion.forEach(button => {
       }
     } else {
       valorAnterior = pantalla.textContent;
-      operadorSeleccionat = operacion;
+      seleccionado = operacion;
       pantalla.textContent = '';
     }
   });
