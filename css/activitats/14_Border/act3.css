@@ -1,0 +1,17 @@
+.elemento {
+    border-color: orange;
+    border-radius: 4rem;
+}
+body {
+    background-color: #f0f0f0;
+    font-family: sans-serif;
+    text-align: center;
+    padding: 50px;
+  }
+  img {
+    width: 300px;
+    transition: filter 0.5s ease;
+    border: 1rem solid;
+    border-radius: 60px;
+    border-color: red;
+  }
